@@ -49,6 +49,12 @@
               "target": "Package",
               "version": "[0.102.3, )"
             },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )",
+              "autoReferenced": true
+            },
             "itext": {
               "target": "Package",
               "version": "[8.0.5, )"

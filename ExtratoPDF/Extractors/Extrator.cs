@@ -11,33 +11,78 @@ namespace ExtratoPDF.Extractors
 {
     internal class Extrator
     {
-        static string dllPath = Path.Join(Directory.GetCurrentDirectory(), "ExtratoPDFLibrary.dll");
-        static Assembly assembly = Assembly.LoadFile(dllPath);
-        static Type type = assembly.GetType("ExtratoPDFLibrary.Extrator");
-        static object obj = Activator.CreateInstance(type);
+
+        Type? type;
+        object? obj;
         
-        public static string GetVersion()
-        {
-            var methodBankList = type.GetMethod("GetVersion");
 
-            if (methodBankList != null) {
-                return methodBankList.Invoke(obj, null) as string;
+        public Extrator() {
+            try
+            {
+
+                string dllPath = Path.Join(Directory.GetCurrentDirectory(), "ExtratoPDFLibrary.dll");
+                Assembly assembly = Assembly.LoadFile(dllPath);
+
+                type = assembly.GetType("ExtratoPDFLibrary.Extrator");
+            
+                if(type != null)
+                {
+                    obj = Activator.CreateInstance(type);
+                }
+            } catch
+            {
+
             }
-
-            return "-";
         }
 
-        public static string[] GetBankList()
+        public static Extrator Factory()
         {
-            var methodBankList = type.GetMethod("GetBanksList");
-
-            var list = (string[])methodBankList.Invoke(obj, null);
-
-
-            return list ?? [];
+            return new Extrator();
         }
 
-        public static List<ExtratoItem> Extract(string bank, string text) 
+        public bool IsLoaded()
+        {
+            return type != null;
+        }
+        
+        public string GetVersion()
+        {
+            
+            try
+            {
+                var methodBankList = type.GetMethod("GetVersion");
+
+                if (methodBankList != null)
+                {
+                    return methodBankList.Invoke(obj, null) as string;
+                }
+
+                return "-";
+            }
+            catch { 
+                return "-";
+            }
+        }
+
+        public  string[] GetBankList()
+        {
+            try
+            {
+
+                var methodBankList = type.GetMethod("GetBanksList");
+
+                var list = (string[])methodBankList.Invoke(obj, null);
+
+
+                return list ?? [];
+            }
+            catch
+            {
+                return [];
+            }
+        }
+
+        public  List<ExtratoItem> Extract(string bank, string text) 
         {
             if (type == null) {
                 throw new Exception($"Type not found");

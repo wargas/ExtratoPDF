@@ -44,3 +44,4 @@ C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Release\net8.0-windows\Exc
 C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Release\net8.0-windows\Irony.dll
 C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Release\net8.0-windows\SixLabors.Fonts.dll
 C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Release\net8.0-windows\XLParser.dll
+C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\obj\Release\net8.0-windows\ExtratoPDF.sourcelink.json

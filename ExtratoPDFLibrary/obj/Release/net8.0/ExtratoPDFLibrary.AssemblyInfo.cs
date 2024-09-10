@@ -11,15 +11,13 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ExtratoPDF")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ExtratoPDFLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1a29bb107812ea4c3658f5f3c9c2ee039329561")]
-[assembly: System.Reflection.AssemblyProductAttribute("ExtratoPDF")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ExtratoPDF")]
+[assembly: System.Reflection.AssemblyProductAttribute("ExtratoPDFLibrary")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ExtratoPDFLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

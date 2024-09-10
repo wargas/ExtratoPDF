@@ -249,6 +249,7 @@
             Name = "MainWindow";
             Padding = new Padding(5);
             Text = "Extrato PDF";
+            Load += MainWindow_Load;
             tableLayoutPanel1.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
             statusStrip.ResumeLayout(false);

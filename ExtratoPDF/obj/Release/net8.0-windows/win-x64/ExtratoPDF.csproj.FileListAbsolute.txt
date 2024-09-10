@@ -503,3 +503,4 @@ C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Release\net8.0-windows\win
 C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Release\net8.0-windows\win-x64\Irony.dll
 C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Release\net8.0-windows\win-x64\SixLabors.Fonts.dll
 C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Release\net8.0-windows\win-x64\XLParser.dll
+C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\obj\Release\net8.0-windows\win-x64\ExtratoPDF.sourcelink.json
