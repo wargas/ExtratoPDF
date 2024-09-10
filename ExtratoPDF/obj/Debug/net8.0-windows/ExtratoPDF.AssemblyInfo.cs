@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExtratoPDF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1a29bb107812ea4c3658f5f3c9c2ee039329561")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+019f149b5988b6dfee6086eff8116153cf18d2a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExtratoPDF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExtratoPDF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,26 +9,34 @@ namespace ExtratoPDF.Extractors;
     {
     public static string Process(string file)
     {
-
-        PdfReader reader = new(file);
-        PdfDocument document = new(reader);
-
-        int pages = document.GetNumberOfPages();
-
-        StringBuilder sb = new();
-
-        for (int i = 0; i < pages; i++)
+        try
         {
-            PdfPage page = document.GetPage(i);
 
-            ITextExtractionStrategy strategy = new SimpleTextExtractionStrategy();
+            PdfReader reader = new(file);
+            PdfDocument document = new(reader);
 
-            var text = PdfTextExtractor.GetTextFromPage(page, strategy);
+            int pages = document.GetNumberOfPages();
 
-            sb.Append(text);
+            StringBuilder sb = new();
+
+            for (int i = 1; i <= pages; i++)
+            {
+                PdfPage page = document.GetPage(i);
+
+                ITextExtractionStrategy strategy = new SimpleTextExtractionStrategy();
+
+                var text = PdfTextExtractor.GetTextFromPage(page, strategy);
+
+                sb.Append(text);
+            }
+
+            return sb.ToString();
         }
+        catch (Exception ex) {
+            MessageBox.Show(ex.Message);
 
-        return sb.ToString();
+            return "";
+        }
 
     }
 }

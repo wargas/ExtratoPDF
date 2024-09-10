@@ -80,12 +80,16 @@ namespace ExtratoPDF
 
                 buttonProceess.Enabled = false;
                 int indexFile = 0;
+
+               
                 foreach (var file in files)
                 {
                     buttonProceess.Text = $"{indexFile + 1}/{files.Count()}";
                     string text = PDFConverter.Process(file);
+                    //MessageBox.Show(text);
                     listViewFiles.Items[indexFile].EnsureVisible();
 
+                    //MessageBox.Show(text);
 
                     var _items = extractor.Extract(comboBoxBank.Text, text);
 
