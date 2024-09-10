@@ -1,0 +1,5 @@
+config-setup.iss
+*.exe
+ExtratoPDF/bin
+ExtratoPDFLibrary/bin
+.vs

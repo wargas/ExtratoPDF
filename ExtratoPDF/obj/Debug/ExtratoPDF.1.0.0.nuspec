@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ExtratoPDF</id>
+    <version>1.0.0</version>
+    <authors>ExtratoPDF</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0">
+        <dependency id="ClosedXML" version="0.102.3" exclude="Build,Analyzers" />
+        <dependency id="itext" version="8.0.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net8.0-windows7.0/pdf-file-format.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Debug\net8.0-windows\ExtratoPDF.runtimeconfig.json" target="lib\net8.0-windows7.0\ExtratoPDF.runtimeconfig.json" />
+    <file src="C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\bin\Debug\net8.0-windows\ExtratoPDF.dll" target="lib\net8.0-windows7.0\ExtratoPDF.dll" />
+    <file src="C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\pdf-file-format.ico" target="content\pdf-file-format.ico" />
+    <file src="C:\Users\warga\source\repos\ExtratoPDF\ExtratoPDF\pdf-file-format.ico" target="contentFiles\any\net8.0-windows7.0\pdf-file-format.ico" />
+  </files>
+</package>
